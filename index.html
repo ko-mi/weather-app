@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/f7d44e62b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-section">
+        <form id="search-form">
+          <div class="form-row">
+            <div class="col-sm-9">
+              <input
+                id="search-input"
+                class="form-control"
+                type="text"
+                placeholder="🔍  Search new place"
+              />
+            </div>
+            <div class="col-sm-3">
+              <button
+                id="current-location"
+                type="button"
+                class="btn btn-secondary mb-2"
+              >
+                <i class="fas fa-globe"></i>
+                Find me
+              </button>
+            </div>
+          </div>
+        </form>
+        <hr class="transparent" />
+        <p id="time-now"></p>
+        <i class="fas fa-map-marker-alt location"></i>
+        <p class="location" id="searched-location"></p>
+        <div>
+          <img src="" id="weather-icon-today" />
+        </div>
+        <h3 id="weather-description-today"></h3>
+        <h1 class="temperature-today">
+          <span id="temperature-value-today"></span>
+          <span class="units"
+            ><a id="celsius-symbol" href="#">°C</a>|<a
+              id="fahrenheit-symbol"
+              href="#"
+              >°F</a
+            ></span
+          >
+        </h1>
+        <p id="feels-like"></p>
+        <div class="container secondary-data">
+          <div class="row">
+            <div class="col-6">
+              <p class="one">
+                <i class="fas fa-temperature-high"></i> Highest:
+                <span id="temp-max"> </span>
+              </p>
+              <p class="one">
+                <i class="fas fa-temperature-low"></i> Lowest:
+                <span id="temp-min"> </span>
+              </p>
+            </div>
+            <div class="col-6">
+              <p class="two">
+                <i class="fas fa-wind"></i> Wind:
+                <span id="wind"> </span>
+              </p>
+              <p class="two">
+                <i class="fas fa-tint"></i> Humidity:
+                <span id="humidity"> </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container weekly-forecast">
+          <div class="row" id="forecast"></div>
+        </div>
+      </div>
+      <div class="fact-section">
+        <hr />
+        <h3 id="did-you-know"></h3>
+        <p id="fun-fact"></p>
+        <hr />
+        <h4 id="greeting"></h4>
+        <hr />
+        <span class="fact-source">
+          <a
+            id="fact-source"
+            href="https://www.funfactsabout.net/interesting-weather-facts/"
+            >Source: funfactsabout.net
+          </a>
+        </span>
+      </div>
+      <div class="col-sm-12">
+        <p class="footer">
+          Coded by
+          <a id="my-page" href="#" target="_blank"> Michalina Kowalczyk </a>
+        </p>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+body {
+  text-align: center;
+  margin: 20px auto;
+  color: #2898ff;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  font-family: "Poppins", sans-serif;
+}
+.fact-section {
+  color: white;
+}
+
+.weather-section {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 10px;
+}
+#fact-source,
+#my-page {
+  color: white;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.location {
+  display: inline;
+  font-size: 25px;
+}
+
+#weather-icon-today {
+  font-size: 100px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.units {
+  font-size: 20px;
+  color: #808080;
+  font-weight: 400;
+  position: relative;
+  top: -44px;
+}
+
+.secondary-data {
+  font-size: 12px;
+  color: black;
+  opacity: 0.5;
+  line-height: 1;
+  padding: 15px;
+}
+
+.secondary-data .one {
+  margin: 2px auto;
+  text-align: left;
+}
+
+.secondary-data .two {
+  margin: 2px auto;
+  text-align: right;
+}
+
+.weekly-forecast p {
+  display: block;
+  color: black;
+  opacity: 0.5;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.weekly-forecast img {
+  width: fit-content;
+}
+
+#feels-like {
+  font-size: 14px;
+  color: black;
+  opacity: 0.5;
+  margin: 0 auto;
+}
+
+hr.transparent {
+  border: none;
+  height: 10px;
+}
+.fact-section hr {
+  height: 20px;
+  border: none;
+}
+
+.fact-section h3,
+.fact-section p {
+  text-align: left;
+  margin: 0 20px;
+}
+.fact-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fact-section p {
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.fact-section img {
+  width: 70%;
+}
+
+.fact-section h4 {
+  font-size: 16px;
+  text-align: left;
+  margin: 0 20px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+.fact-source {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.fact-source a:hover {
+  text-decoration: none;
+  color: #2898ff;
+}
+
+.footer {
+  font-size: 13px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 13px;
+}
+
+#time-now {
+  text-align: left;
+  color: black;
+  opacity: 0.5;
+}
