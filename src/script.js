@@ -227,3 +227,5 @@ fahrenheitButton.addEventListener("click", displayInFahrenheit)
 
 let locationButton = document.querySelector("#current-location");
 locationButton.addEventListener("click", handleFindMe)
+
+fetchData("Warsaw")
