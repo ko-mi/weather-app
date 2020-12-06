@@ -127,10 +127,10 @@ function displayForecast(response){
   let forecast = null;
   forecastElement.innerHTML = null;
   
-  for (let i=0; i<5; i++) {
+  for (let i=0; i<4; i++) {
     let forecast = response.data.list[i];
     forecastElement.innerHTML += 
-    `<div class="col-sm">
+    `<div class="col-sm-3">
     <p>${formatHours(response.data.list[i].dt*1000)}</p>
     <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
     <p class="temp">
