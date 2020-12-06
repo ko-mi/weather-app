@@ -14,10 +14,16 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-#fact-source,
 #my-page {
   color: white;
+  font-size: 13px;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+#fact-source {
   font-size: 10px;
+  color: white;
   opacity: 0.5;
 }
 
